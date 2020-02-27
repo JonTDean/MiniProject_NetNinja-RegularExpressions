@@ -1,0 +1,35 @@
+body{
+
+    font-family: arial;
+}
+p{
+    font-size: 12px;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    color: black;
+    text-align: center;
+    width: 500px;
+    margin: 20px auto;
+}
+
+input {
+    border-radius:  7px;
+    border-width: 2px;
+    border-color: rgb(224, 224, 224);;
+    color: black;
+    border-style: solid;    
+    width:90%;
+    height: 40px;
+    font-size: 150%;
+    padding-left: 10px;
+}
+
+::placeholder{
+    color: rgb(100, 100, 100);
+    opacity: 100%;
+}
