@@ -4,6 +4,7 @@
 
 // one way to create a regular expression 
 // var reg2 = new RegExp(/[a-z]/,'i');
+
 const inputs = document.querySelectorAll('input');
 
 const patterns = {
@@ -26,6 +27,6 @@ function validate(field, regex){
 inputs.forEach((input) => {
     input.addEventListener('keyup', (e) => {
        //console.log(e.target.attributes.name.value);
-        validate(e.target, patterns[e.target.attributes.name.value])
+       classAssign(e.target, patterns[e.target.attributes.name.value])
     });
 });

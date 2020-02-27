@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Non-Followed Page</title>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>New User Form </h1>
+
+        <forms>
+
+            <input type="text" name="username"  maxlength="20" placeholder="username">
+                <p> Type your User Name [8-20] Characters. Letters, Hyphens, and Numbers Only. </p>    
+
+            <input type="password" name="password" maxlength="20" placeholder="password">
+                <p> Type your Password [6-20] Characters. Letters and Numbers Only. </p>
+
+            <input type="text" name="email" maxlength="254" placeholder="email">
+                <p> Type your Email. ex: name@Site.com </p>
+
+        </forms>
+
+        <!-- 
+            Found information on the length limit on email addresses:
+
+                "
+                    That limit is a maximum of 64 characters (octets) in the “local part” (before the “@”)
+                    and a maximum of 255 characters (octets) in the domain part (after the “@”) for a
+                    total length of 320 characters. However, there is a restriction in RFC 2821 on the
+                    length of an address in MAIL and RCPT commands of 254 characters. Since addresses
+                    that do not fit in those fields are not normally useful, the upper limit on address
+                    lengths should normally be considered to be 254.
+                "
+
+            https://7php.com/the-maximum-length-limit-of-an-email-address-is-254-not-320/
+        -->
+        <script type="text/javascript" src="validation.js"></script>
+    </body>
+</html>
